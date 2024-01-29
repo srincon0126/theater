@@ -1,0 +1,537 @@
+ul {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+}
+
+ul li {
+    list-style: none;
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    transition: 3s;
+}
+
+ul li:nth-child(3) {
+    padding-right: 10px;
+}
+
+ul:hover li {
+    transform: rotate(45deg) translateY(-200px);
+    opacity: 0;
+    filter: blur(30px);
+}
+
+li:nth-child(1) {
+    transition-delay: 0;
+}
+
+li:nth-child(2) {
+    transition-delay: 0.6s;
+}
+
+li:nth-child(3) {
+    transition-delay: 0.8s;
+
+}
+
+li:nth-child(4) {
+    transition-delay: 1.2s;
+}
+
+li:nth-child(5) {
+    transition-delay: 1.4s;
+}
+
+li:nth-child(6) {
+    transition-delay: 1.6s;
+}
+
+li:nth-child(7) {
+    transition-delay: 2.0s;
+}
+
+#box h1 {
+    font-family: Great Vibes;
+    position: relative;
+    font-size: 10vw;
+}
+
+#box h1::before {
+    position: absolute;
+    content: attr(data-text);
+    text-shadow: rgba(239, 252, 4, 0.99) 0px 0 100px;
+    filter: blur(50px) brightness(1);
+    animation: flicker 1s linear 1s forwards;
+    animation-iteration-count: 2;
+}
+
+
+@keyframes flicker {
+    0% {
+        filter: blur(10px) brightness(1);
+    }
+
+    3% {
+        filter: blur(10px) brightness(0);
+    }
+
+    6% {
+        filter: blur(10px) brightness(0);
+    }
+
+    9% {
+        filter: blur(10px) brightness(1);
+    }
+
+    10% {
+        filter: blur(10px) brightness(0);
+    }
+
+    20% {
+        filter: blur(10px) brightness(0);
+    }
+
+    35% {
+        filter: blur(10px) brightness(1);
+    }
+
+    40% {
+        filter: blur(10px) brightness(1);
+    }
+
+    59% {
+        filter: blur(10px) brightness(0);
+    }
+
+    60% {
+        filter: blur(10px) brightness(1);
+    }
+
+    69% {
+        filter: blur(10px) brightness(1);
+    }
+
+    73% {
+        filter: blur(10px) brightness(0);
+    }
+
+    80% {
+        filter: blur(10px) brightness(1);
+    }
+
+    90% {
+        filter: blur(10px) brightness(0);
+    }
+
+    99% {
+        filter: blur(10px) brightness(1);
+    }
+
+    100% {
+        filter: blur(10px) brightness(1);
+    }
+}
+
+
+
+/* 
+/* fonts to use in movie headers */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+#sals_theather {
+    background-image: url(../images/bck2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.rounded {
+    height: 350px;
+    width: 220px;
+}
+
+
+
+
+
+
+
+
+/* black adam.thml page */
+
+.movieHero{
+    height: 650px;
+}
+
+/* end of Black Adam html */
+
+/* elf page */
+
+#snow_wrap {
+    background: rgb(245, 93, 255);
+    background: linear-gradient(90deg, rgba(245, 93, 255, 1) 4%, rgba(102, 95, 217, 1) 50%, rgba(5, 206, 247, 1) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+
+#snow {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#snow,
+#snow:after,
+#snow:before {
+    content: "";
+    position: absolute;
+    top: -550px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(4px 4px at 100px 50px, #fff, transparent),
+        radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+        radial-gradient(3px 3px at 300px 250px, #fff, transparent),
+        radial-gradient(9px 9px at 400px 350px, #fff, transparent),
+        radial-gradient(4px 4px at 500px 500px, #fff, transparent),
+        radial-gradient(6px 6px at 50px 200px, #fff, transparent),
+        radial-gradient(1px 1px at 49px 500px, #fff, transparent),
+        radial-gradient(5px 5px at 330px 440px, #fff, transparent),
+        radial-gradient(1px 1px at 600px 280px, #fff, transparent),
+        radial-gradient(4px 4px at 500px 500px, #fff, transparent),
+        radial-gradient(6px 6px at 50px 200px, #fff, transparent),
+        radial-gradient(3px 3px at 150px 300px, #fff, transparent),
+        radial-gradient(9px 9px at 130px 40px, #fff, transparent);
+
+
+
+    background-size: 650px 650px;
+    animation: snowDay 3s linear;
+    animation-iteration-count: infinite;
+
+}
+
+#snow:after {
+    margin-left: -250px;
+    opacity: 0.5;
+    filter: blur(2px);
+    animation-direction: reverse;
+    animation-duration: 9s;
+}
+
+#snow:before {
+    margin-left: -350px;
+    opacity: 0.5;
+    filter: blur(2px);
+    animation-direction: reverse;
+    animation-duration: 9s;
+}
+
+@keyframes snowDay {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(650px);
+    }
+}
+
+#elfShowTime {
+    background: rgb(245, 93, 255);
+    background: linear-gradient(90deg, rgba(245, 93, 255, 1) 4%, rgba(102, 95, 217, 1) 50%, rgba(5, 206, 247, 1) 100%);
+    width: 100%;
+
+}
+
+#elfimage img {
+    height: 550px;
+}
+
+#elfbox h1 {
+    font-family: Great Vibes;
+    font-size: 5vw;
+    color: rgb(117, 233, 117);
+}
+
+#elftext {
+    color: #fff;
+}
+
+/* end of Elf html */
+
+/* VIOLENT Night */
+
+#snow_wrap2 {
+    background: rgb(247, 8, 8);
+    background: linear-gradient(90deg, rgba(247, 8, 8, 1) 5%, rgba(238, 167, 167, 1) 41%, rgba(0, 0, 0, 1) 89%);
+    position: relative;
+    overflow: hidden;
+}
+
+#snow2 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#snow2,
+#snow2:after,
+#snow2:before {
+    content: "";
+    position: absolute;
+    top: -550px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(4px 4px at 100px 50px, #fff, transparent),
+        radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+        radial-gradient(3px 3px at 300px 250px, #fff, transparent),
+        radial-gradient(9px 9px at 400px 350px, #fff, transparent),
+        radial-gradient(4px 4px at 500px 500px, #fff, transparent),
+        radial-gradient(6px 6px at 50px 200px, #fff, transparent),
+        radial-gradient(1px 1px at 49px 500px, #fff, transparent),
+        radial-gradient(5px 5px at 330px 440px, #fff, transparent),
+        radial-gradient(1px 1px at 600px 280px, #fff, transparent),
+        radial-gradient(4px 4px at 500px 500px, #fff, transparent),
+        radial-gradient(6px 6px at 50px 200px, #fff, transparent),
+        radial-gradient(3px 3px at 150px 300px, #fff, transparent),
+        radial-gradient(9px 9px at 130px 40px, #fff, transparent);
+
+
+
+    background-size: 650px 650px;
+    animation: snowDay 3s linear;
+    animation-iteration-count: infinite;
+
+}
+
+#snow2:after {
+    margin-left: -250px;
+    opacity: 0.5;
+    filter: blur(2px);
+    animation-direction: reverse;
+    animation-duration: 9s;
+}
+
+#snow2:before {
+    margin-left: -350px;
+    opacity: 0.5;
+    filter: blur(2px);
+    animation-direction: reverse;
+    animation-duration: 9s;
+}
+
+@keyframes snowDay {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(650px);
+    }
+}
+
+
+#movietime {
+    background: rgb(247, 8, 8);
+    background: linear-gradient(90deg, rgba(247, 8, 8, 1) 5%, rgba(238, 167, 167, 1) 41%, rgba(0, 0, 0, 1) 89%);
+
+}
+
+#violentNightpage {
+    color: #fff;
+}
+
+#ViolentNightborder {
+    width: 500px;
+    height: 650px;
+    border: 5px solid white;
+    padding: 0%;
+    overflow: hidden;
+
+}
+
+#ViolentNightborder img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* end of VIOLENT Night html */
+
+/* Top Gun html */
+
+#topguncontainer {
+    width: 500px;
+    height: 750px;
+    border: 5px solid white;
+    padding: 0%;
+    overflow: hidden;
+}
+
+#topguncontainer img {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+
+}
+
+
+#topguncontainer img:hover {
+    transform: scale(1.6) rotate(20deg);
+}
+
+/* /Top Gun */
+
+/* the Menu html */
+
+
+/* /the Menu html */
+
+
+
+/* avatar html */
+
+#Avatar {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-top: 10vh;
+
+}
+
+#Avatar h2 {
+    position: absolute;
+    text-align: center;
+    line-height: 100px;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-family: 'Quintessential', cursive;
+}
+
+#Avatar h2:nth-child(2) {
+    color: #03a9f4;
+    animation: wave 2s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0% {
+        clip-path: polygon(0% 100%, 0% 56%, 9% 60%, 17% 65%, 30% 68%, 42% 63%, 48% 59%, 57% 53%, 64% 51%, 72% 44%, 84% 42%, 91% 46%, 97% 51%, 100% 56%, 100% 100%);
+    }
+
+    20% {
+        clip-path: polygon(1% 40%, 15% 45%, 18% 55%, 25% 64%, 38% 70%, 48% 67%, 59% 64%, 69% 60%, 83% 58%, 100% 62%, 100% 63%, 100% 100%, 0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0% 100%, 0% 56%, 9% 60%, 17% 65%, 30% 68%, 42% 63%, 48% 59%, 57% 53%, 64% 51%, 72% 44%, 84% 42%, 91% 46%, 97% 51%, 100% 56%, 100% 100%);
+    }
+
+    100% {
+        clip-path: polygon(1% 40%, 15% 45%, 18% 55%, 25% 64%, 38% 70%, 48% 67%, 59% 64%, 69% 60%, 83% 58%, 100% 62%, 100% 63%, 100% 100%, 0% 100%);
+    }
+}
+
+/* /avatar html */
+
+
+
+
+
+/* ALL seating*/
+#seating_chart {
+    background-color: #242333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+}
+
+.seat_container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+.seat {
+    background-color: #444451;
+    height: 26px;
+    width: 30px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.seat.selected {
+    background-color: green;
+}
+
+.seat.sold {
+    background-color: #fff;
+}
+
+.seat:nth-of-type(2) {
+    margin-right: 18px;
+}
+
+.seat:nth-last-child(2) {
+    margin-left: 18px;
+}
+
+.seat:not(.sold):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.showcase .seat:not(.sold):hover {
+    cursor: default;
+    transform: scale(1);
+}
+
+.showcase {
+    padding: 5px 10px;
+    border-radius: 5px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.showcase li small {
+    margin-left: 2px;
+}
+
+.row_seat {
+    display: flex;
+    justify-content: center;
+}
+
+.screen {
+    background-color: #fff;
+    height: 120px;
+    width: 100%;
+    margin: 25px 0;
+    transform: rotateX(-48deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+p.text{
+    margin: 25px 0;
+}
+p.text span{
+    color: green;
+} */

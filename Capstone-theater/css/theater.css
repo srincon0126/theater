@@ -1,0 +1,626 @@
+/* fonts to use in movie headers */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+#sals_theather {
+  background-image: url(../images/bck2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.rounded {
+  height: 350px;
+  width: 220px;
+}
+
+
+
+
+
+
+
+
+/* black adam.thml page */
+
+#ba {
+  background-color: black;
+  color: aliceblue;
+}
+
+.movieHero {
+  height: 650px;
+}
+
+#seating_chart {
+  background-color: #242333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100%;
+}
+
+.seat_container {
+  perspective: 500px;
+  margin-bottom: 30px;
+}
+
+.showcase {
+  padding: 5px 10px;
+  border-radius: 5px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.screen {
+  background-color: #fff;
+  height: 120px;
+  width: 100%;
+  margin: 25px 0;
+  transform: rotateX(-15deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+.seat {
+  background-color: #444451;
+  height: 12px;
+  width: 15px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.seat.selected {
+  background-color: #2196F3;
+
+}
+
+.seat.sold {
+  background-color: red;
+}
+
+
+/* Customize the label (the container) */
+.seat-container {
+  display: inline;
+  position: relative;
+  padding-left: 35px;
+  margin: 20px !important;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.seat-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.seat-container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+.seat-container input:checked~.checkmark {
+  background-color: #2196F3;
+}
+
+.seat-container input:disabled~.checkmark {
+  background-color: red;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.seat-container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.seat-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+}
+
+.row_seat {
+  display: flex;
+  justify-content: center;
+}
+
+/* seat bottom */
+.seatbtn {
+  margin-top: 20px;
+}
+
+/* thankyou page */
+.thankYouText {
+  margin-top: 70px;
+}
+
+.payment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  min-height: 100vh;
+  padding-bottom: 70px;
+}
+
+.payment form {
+  padding: 20px;
+  width: 950px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment form .payment-row {
+  display: flex;
+  flex-wrap: warp;
+  gap: 15px;
+}
+
+.payment form .payment-row .title {
+  flex: 1 1 250px;
+}
+
+.payment form .payment-row .title .inform h3 {
+  font-size: 20px;
+  color: #333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.payment form .payment-row .title .inputbox {
+  margin: 15px 0;
+}
+
+.payment form .payment-row .title .inputbox span {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.payment form .payment-row .title .inputbox input {
+  width: 100;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font: 15px;
+  text-transform: none;
+}
+
+.payment form .payment-row .title .inputbox input:focus {
+  border: 1px solid #000;
+}
+
+.payment form .payment-row .title .flex {
+  display: flex;
+  gap: 15px;
+}
+
+.payment form .payment-row .title .flex .inputbox {
+  margin-top: 5px;
+}
+
+.payment form .payment-row .title .inputbox img {
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.payment form .submit-btnn {
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  background: #27ae60;
+  color: #fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.payment form .submit-btnn:hover {
+  background-color: #2ecc71;
+}
+
+.information {
+ background: rgb(88,67,67);
+background: linear-gradient(90deg, rgba(88,67,67,1) 0%, rgba(104,148,154,1) 0%, rgba(226,226,226,1) 100%);
+}
+
+
+/* other Actives */
+#carousel {
+  width:auto;
+  margin-top: 90px;
+}
+
+.carousel-item img {
+  height: 900px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* other Actives
+.information{
+  margin: 90px;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(180deg, rbg(236, 213, 232)0%,
+      rbg(50, 112, 118)100%);
+}
+
+.gallery {
+  width: 100%;
+}
+
+.gallery-container {
+  align-items: center;
+  display: flex;
+  height: 400px;
+  margin: 0 auto;
+  max-width: 1000px;
+  position: relative;
+}
+
+.gallery-item {
+  height: 200px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  width: 330px;
+  z-index: 0;
+  border-radius: 15px;
+  background-size: contain;
+}
+
+.gallery-item-1 {
+  left: 15%;
+  opacity: .4;
+  transform: translateX(-50%);
+}
+
+.gallery-item-2,
+.gallery-4 {
+  height: 250px;
+  opacity: 0.8;
+  width: 380px;
+  z-index: 1;
+}
+
+.gallery-item-2{
+  left:30%;
+  transform: translateX(-50%);
+}
+.gallery-item-3{
+  box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.35);
+  height: 300px;
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  width:430px;
+  z-index:2;
+}
+.gallery-item-4{
+left: 70%;
+transform: translateX(-50%);
+}
+.gallery-item-5{
+  left: 85%;
+  opacity: .4;
+  transform: translateX(-50%);
+} 
+.gallery-container button{
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size:30px ;
+  margin: 0 50px;
+  padding: 0 12px;
+  text-transform: capitalize;
+}
+.gallery-controls-button:focus{
+  outline: none;
+}
+.gallery-controls-previous{
+position: relative;
+}
+.gallery-controls-previous::before{
+  border: solid #000;
+  border-width:0 5px 5px 0 ;
+  content: '';
+  display: inline-block;
+  height: 5px;
+  left: -30px;
+  padding: 10px;
+  position: absolute;
+  top: 25%;
+  transform: rotate(135deg) translateY(-50%);
+  transition: left 0.15s ease-in-out;
+  width: 5px;
+}
+.gallery-controls-next:hover::before{
+  right: -40px;
+}
+.gallery-nav{
+  bottom: -15px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  width:100%;
+}
+.gallery-nav li{
+  background:#ccc;
+  border-radius: 50%;
+  height: 10px;
+  margin: 0 16px;
+}.gallery-nav li.gallery-item-selected{
+  background: #555;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  } 
+}*/
